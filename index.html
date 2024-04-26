@@ -25,7 +25,7 @@
     </header>
     <main class="page">
         <h1 class="page-ttl">Canard jaune pour la revue de code</h1>
-        <section class="page-pics">
+        <section class="page-pics" data-id="1">
             <div class="pictures" id="pictures">
                 <button type="button" class="pictures-handler pictures-prev js-prev">◀️</button>
                 <img class="pictures-img" id="big-picture" src="img/canard-jaune-1-l.png" alt="canard jaune pour dévloppeur">
@@ -84,31 +84,32 @@
                 </dl>
             </div>
         </section>
-        <section class="similar page-section">
+        <section class="similar page-section" id="similar">
             <h2 class="product-subttl">Articles similaires</h2>
-            <ul class="similar-lst">
-                <li class="similar-itm">
+            <button type="button" class="similar-prev js-prev desk-hidden hide">◀️</button>
+            <ul class="similar-lst" id="similar-lst">
+                <li class="similar-itm" id="similar-1">
                     <a class="similar-lnk" href="#">
                         <img class="similar-img" src="img/canard-dragon.png" alt="canard dragon">
                         <h3 class="similar-ttl">Canard Dragon</h3>
                         <div class="similar-price">19€95</div>
                     </a>
                 </li>
-                <li class="similar-itm">
+                <li class="similar-itm mob-hidden" id="similar-2">
                     <a class="similar-lnk" href="#">
                         <img class="similar-img" src="img/canard-geek.png" alt="canard geek">
                         <h3 class="similar-ttl">Canard Geek</h3>
                         <div class="similar-price">19€95</div>
                     </a>
                 </li>
-                <li class="similar-itm">
+                <li class="similar-itm mob-hidden" id="similar-3">
                     <a class="similar-lnk" href="#">
                         <img class="similar-img" src="img/canard-licorne.png" alt="canard licorne">
                         <h3 class="similar-ttl">Canard Licorne</h3>
                         <div class="similar-price">19€95</div>
                     </a>
                 </li>
-                <li class="similar-itm">
+                <li class="similar-itm mob-hidden" id="similar-4">
                     <a class="similar-lnk" href="#">
                         <img class="similar-img" src="img/canard-bowie.png" alt="canard David Bowie">
                         <h3 class="similar-ttl">Ziggy StarDuck</h3>
@@ -116,6 +117,7 @@
                     </a>
                 </li>
             </ul>
+            <button type="button" class="similar-next js-next desk-hidden">▶️</button>
         </section>
     </main>
     <aside class="reinsur">
@@ -150,6 +152,6 @@
         </nav>
         <div class="footer-cp">© 2024 - Dev Gadgets</div>
     </footer>
-    <script src="js/script.js"></script>
+    <script type='module' src="js/script.js"></script>
 </body>
 </html>
