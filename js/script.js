@@ -19,3 +19,9 @@ document.getElementById('pictures').addEventListener('click', event=>{
     }
     document.getElementById('big-picture').src = document.getElementById('big-picture').src.replace(/-[0-9]-l/, `-${i}-l`);
 })
+
+document.getElementById('cta-btn').addEventListener('click', event =>{
+    let cart = parseInt(document.getElementById('cart-nb').textContent) + parseInt(document.getElementById('nbrAdd').value);
+    if(cart > 99) cart = '99+'
+    document.getElementById('cart-nb').textContent = cart;
+})
