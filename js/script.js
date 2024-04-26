@@ -104,7 +104,6 @@ document.getElementById('similar').addEventListener('click', event => {
         document.getElementById(`similar-${similarLi}`).classList.toggle('mob-hidden');
     }
     hideOrNotHide(similarLi);
-    ;
 })
 
 
