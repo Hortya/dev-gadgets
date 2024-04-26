@@ -210,6 +210,10 @@ body {
     }
 }
 
+.hide{
+    display: none;
+}
+
 /* ADD TO CART */
 
 .price {
